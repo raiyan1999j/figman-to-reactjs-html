@@ -4,9 +4,9 @@ export default function Navbar(){
     return(
         <>
             <section className="w-full mx-auto relative bg-bannerBg before:content-'' before:table before:absolute before:w-full before:bg-[#BD1F17]/90 before:h-full before:bg-cover before:-z-30">
-                <nav className="w-[1300px] h-[108px] mx-auto flex flex-row items-center text-white">
-                    <div className="flex flex-row items-center gap-x-2">
-                        <span className="w-[36.99px] h-[37px]">
+                <nav className="w-[1320px] h-[108px] mx-auto flex flex-row items-center text-white">
+                    <div className="flex flex-row items-center">
+                        <span className="w-[36.99px] h-[37px] mr-[5.99px]">
                             <img src={Logo} alt="logo" className="h-full w-full object-contain"/>
                         </span>
                         <h4 className="capitalize font-poppins font-normal text-[28.44px] leading-[28.44px]">

@@ -13,7 +13,8 @@ export default {
         "robot":["Roboto", 'sans-serif']
       },
       backgroundImage:{
-        "bannerBg":"url(./public/bannerBg.png)"
+        "bannerBg":"url(./public/bannerBg.png)",
+        "bannerHeader":"linear-gradient(#BD1F1700,#BD1F17B2)"
       }
     },
   },

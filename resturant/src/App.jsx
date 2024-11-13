@@ -1,3 +1,4 @@
+import Banner from "./ClientSide/Header/Banner"
 import Navbar from "./ClientSide/Header/Navbar"
 
 export default function App(){
@@ -5,6 +6,7 @@ export default function App(){
     <>
     <header>
       <Navbar/>
+      <Banner/>
     </header>
 
     <main>
