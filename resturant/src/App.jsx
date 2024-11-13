@@ -1,5 +1,6 @@
 import Banner from "./ClientSide/Header/Banner"
 import Navbar from "./ClientSide/Header/Navbar"
+import About from "./ClientSide/Main/About/About"
 
 export default function App(){
   return(
@@ -10,7 +11,7 @@ export default function App(){
     </header>
 
     <main>
-
+      <About/>
     </main>
 
     <footer>

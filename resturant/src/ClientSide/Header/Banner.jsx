@@ -1,5 +1,4 @@
 import OfferImg from "../../../public/offerImg.png";
-import Offer from '../../../public/offer.png';
 import Star from "../../../public/star.png";
 
 export default function Banner(){

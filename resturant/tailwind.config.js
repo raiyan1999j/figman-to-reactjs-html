@@ -10,11 +10,13 @@ export default {
         "bebus":["Bebas Neue", 'sans-serif'],
         "poppins":["Poppins", 'sans-serif'],
         "raleway":["Raleway", 'sans-serif'],
-        "robot":["Roboto", 'sans-serif']
+        "robot":["Roboto", 'sans-serif'],
+        "open":["Open Sans", 'sans-serif']
       },
       backgroundImage:{
         "bannerBg":"url(./public/bannerBg.png)",
-        "bannerHeader":"linear-gradient(#BD1F1700,#BD1F17B2)"
+        "bannerHeader":"linear-gradient(#BD1F1700,#BD1F17B2)",
+        "progressBar":"radial-gradient(closest-side, white 90%,transparent 80% 100%), conic-gradient(#FEBF00 80%,#F1F1F1 0)"
       }
     },
   },
