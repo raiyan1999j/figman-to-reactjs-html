@@ -1,11 +1,16 @@
 import AboutImg from "../../../../public/about.png";
 import CallLogo from '../../../../public/callLogo.png';
+import Items1 from "../../../../public/items1.png";
 import Badges from "./Badges";
 
 export default function About(){
     return(
         <>
-            <section className="w-[1320px] mt-[120px] mx-auto">
+            <section className="w-full mt-[120px] mx-auto relative">
+            <div className="absolute w-[280.61px] h-[255.51px] right-0 top-[242.45px]">
+                <img src={Items1} alt="foodItem" className="h-full w-full object-contain"/>
+            </div>
+            <div className="w-[1320px] mx-auto">
                 <div className="flex flex-row w-full">
                     <div className="w-[617px] mr-[79px]">
                         <div className="w-[617px] h-[460px] relative">
@@ -71,6 +76,7 @@ export default function About(){
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
             <Badges/>
         </>
