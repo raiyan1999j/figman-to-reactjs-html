@@ -3,6 +3,7 @@ import Navbar from "./ClientSide/Header/Navbar"
 import About from "./ClientSide/Main/About/About"
 import BookForm from "./ClientSide/Main/BookForm/BookForm"
 import Products from "./ClientSide/Main/Products/Products"
+import Review from "./ClientSide/Main/Review/Review"
 
 export default function App(){
   return(
@@ -16,6 +17,7 @@ export default function App(){
       <About/>
       <Products/>
       <BookForm/>
+      <Review/>
     </main>
 
     <footer>
