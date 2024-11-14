@@ -5,8 +5,7 @@ import Bag from "../../../../public/bag.png"
 export default function Badges(){
     return(
         <>
-            <section className="w-full mt-[74px]">
-                <div className="w-[1320px] mx-auto">
+                <div className="w-[1320px] mx-auto mt-[74px]">
                     <div className="flex flex-row">
                         <div className="flex flex-row items-center w-[440px]">
                             <div className="h-[90px] w-[90px] rounded-full flex justify-center items-center shadow-xl shadow-[#0000001A] mr-4">
@@ -52,7 +51,6 @@ export default function Badges(){
                         
                     </div>
                 </div>
-            </section>
         </>
     )
 }

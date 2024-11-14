@@ -1,6 +1,8 @@
 import Banner from "./ClientSide/Header/Banner"
 import Navbar from "./ClientSide/Header/Navbar"
 import About from "./ClientSide/Main/About/About"
+import BookForm from "./ClientSide/Main/BookForm/BookForm"
+import Products from "./ClientSide/Main/Products/Products"
 
 export default function App(){
   return(
@@ -12,6 +14,8 @@ export default function App(){
 
     <main>
       <About/>
+      <Products/>
+      <BookForm/>
     </main>
 
     <footer>
