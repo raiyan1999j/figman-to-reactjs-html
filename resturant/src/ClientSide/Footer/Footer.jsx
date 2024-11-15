@@ -6,15 +6,15 @@ import { IoLocationOutline } from "react-icons/io5";
 export default function Footer(){
     return(
         <>
-            <section className="w-full mt-[120px] bg-footerBg bg-contain py-[120px]">
-                <div className="w-[1320px] mx-auto text-center mb-12">
+            <section className="w-full mt-[120px] bg-footerBg bg-contain py-[120px] smallest:bg-cover">
+                <div className="w-[1320px] mx-auto text-center mb-12 smallest:w-[390px]">
                     <h2 className=" font-bebus font-bold text-[62px] leading-[64px] text-white uppercase">
                     We ready to have you the best dining experiences
                     </h2>
                 </div>
 
-                <div className="w-[1320px] mx-auto mb-[120px]">
-                    <div className="grid grid-cols-[repeat(4,_312px)] gap-x-6 w-full">
+                <div className="w-[1320px] mx-auto mb-[120px] smallest:w-[390px]">
+                    <div className="grid grid-cols-[repeat(4,_312px)] gap-x-6 w-full smallest:grid-cols-1">
                         <div className="w-full flex flex-col items-center">
                             <div className="mb-6">
                             <FaRegClock className="text-[#FEBF00] text-[22.5px]"/>
@@ -101,7 +101,7 @@ export default function Footer(){
                     </div>
                 </div>
 
-                <div className="w-[1320px] mx-auto">
+                <div className="w-[1320px] mx-auto smallest:w-[390px]">
                     <div className="grid grid-cols-[repeat(4,_53.45px)] gap-x-6 w-[285.82px] mx-auto mb-[25px]">
                     <div className="h-[53.45px] w-full rounded-full flex justify-center items-center border border-white">
                             <div>

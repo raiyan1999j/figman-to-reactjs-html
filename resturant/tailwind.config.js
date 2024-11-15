@@ -20,8 +20,37 @@ export default {
         "bookFormImg":"url(./public/bookFormImg.jpeg)",
         "footerBg":"linear-gradient(#000000CC,#000000CC), url(./public/footerBg.jpeg)"
       },
+      keyframes:{
+        fadeInRight:{
+          '0%':{
+            opacity:'0',
+            transform:'translateX(100%)'
+          },
+          '100%':{
+            opacity:'1',
+            transform:'translateX(0)'
+          }
+        },
+        fadeOutLeft:{
+          '0%':{
+            opacity:'1',
+            transform:'translateX(0%)'
+          },
+          '100%':{
+            opacity:'0',
+            transform:'translate(100%)'
+          }
+        }
+      },
+      animation:{
+        "fadeInRight":"fadeInRight 1s ease-in-out",
+        "fadeOutLeft":"fadeOutLeft 1s ease-in-out"
+      },
       listStyleType:{
         square:"square"
+      },
+      screens:{
+        'smallest':{'min':'0px','max':'390px'},
       }
     },
   },

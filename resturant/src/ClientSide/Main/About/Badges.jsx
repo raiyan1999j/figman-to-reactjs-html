@@ -5,10 +5,10 @@ import Bag from "../../../../public/bag.png"
 export default function Badges(){
     return(
         <>
-                <div className="w-[1320px] mx-auto mt-[74px]">
-                    <div className="flex flex-row">
-                        <div className="flex flex-row items-center w-[440px]">
-                            <div className="h-[90px] w-[90px] rounded-full flex justify-center items-center shadow-xl shadow-[#0000001A] mr-4">
+                <div className="w-[1320px] mx-auto mt-[74px] smallest:w-[390px]">
+                    <div className="flex flex-row smallest:flex-col smallest:text-center">
+                        <div className="flex flex-row items-center w-[440px] smallest:w-[390px] smallest:flex-col">
+                            <div className="h-[90px] w-[90px] rounded-full flex justify-center items-center shadow-xl shadow-[#0000001A] mr-4 smallest:mb-4">
                                 <div className="h-10 w-10">
                                 <img src={Package} alt="" className="h-full w-full object-cover" />
                                 </div>
@@ -21,8 +21,8 @@ export default function Badges(){
                             </div>
                         </div>
 
-                        <div className="flex flex-row items-center w-[440px]">
-                            <div className="h-[90px] w-[90px] rounded-full flex justify-center items-center shadow-xl shadow-[#0000001A] mr-4">
+                        <div className="flex flex-row items-center w-[440px] smallest:w-[390px] smallest:flex-col">
+                            <div className="h-[90px] w-[90px] rounded-full flex justify-center items-center shadow-xl shadow-[#0000001A] mr-4 smallest:mb-4">
                                 <div className="h-10 w-10">
                                 <img src={Medal} alt="" className="h-full w-full object-cover" />
                                 </div>
@@ -35,8 +35,8 @@ export default function Badges(){
                             </div>
                         </div>
 
-                        <div className="flex flex-row items-center w-[440px]">
-                            <div className="h-[90px] w-[90px] rounded-full flex justify-center items-center shadow-xl shadow-[#0000001A] mr-4">
+                        <div className="flex flex-row items-center w-[440px] smallest:w-[390px] smallest:flex-col">
+                            <div className="h-[90px] w-[90px] rounded-full flex justify-center items-center shadow-xl shadow-[#0000001A] mr-4 smallest:mb-4">
                                 <div className="h-10 w-10">
                                 <img src={Bag} alt="" className="h-full w-full object-cover" />
                                 </div>

@@ -33,10 +33,10 @@ export default function About() {
   return (
     <>
       <section className="w-full mt-[120px] mx-auto relative overflow-hidden">
-        <div className="w-[1320px] mx-auto">
-          <div className="flex flex-row w-full">
-            <div className="w-[617px] mr-[79px]">
-              <div className="w-[617px] h-[460px] relative">
+        <div className="w-[1320px] mx-auto smallest:w-[390px]">
+          <div className="flex flex-row w-full smallest:w-[390px] smallest:flex-col">
+            <div className="w-[617px] mr-[79px] smallest:w-[390px]">
+              <div className="w-[617px] h-[460px] relative smallest:w-[390px]">
                 <div className="h-full w-full absolute top-0 left-0">
                   <img
                     src={AboutImg}
@@ -65,7 +65,7 @@ export default function About() {
               </div>
             </div>
 
-            <div className="w-[624px]">
+            <div className="w-[624px] smallest:w-[390px]">
               <ul className="flex flex-row gap-x-4 font-robot text-sm font-medium border-[#B52B1D] border-t-0 border-r-0 border-l-0 border capitalize mb-8">
                 {
                   container.map((items,index)=>{
