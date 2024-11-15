@@ -1,9 +1,35 @@
+import { useState } from "react";
 import AboutImg from "../../../../public/about.png";
 import CallLogo from "../../../../public/callLogo.png";
 import Items1 from "../../../../public/items1.png";
 import Badges from "./Badges";
 
+const container=[
+  {
+    opt:"about",
+    heading:"Exceptional culinary experience and delicious food",
+    message:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation"
+  },
+  {
+    opt:"experience",
+    heading:"Tasty dishes, cozy ambiance, exceptional service",
+    message:"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+  },
+  {
+    opt:"contact",
+    heading:"Fresh ingredients, warm atmosphere, unforgettable flavors",
+    message:"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed"
+  }
+]
+
 export default function About() {
+  const [option,setOption] = useState(0);
+
+  const selectTab =(menu)=>{
+    const step1 = container.findIndex(items=>items.opt == menu);
+
+    setOption(step1);
+  }
   return (
     <>
       <section className="w-full mt-[120px] mx-auto relative overflow-hidden">
@@ -41,31 +67,26 @@ export default function About() {
 
             <div className="w-[624px]">
               <ul className="flex flex-row gap-x-4 font-robot text-sm font-medium border-[#B52B1D] border-t-0 border-r-0 border-l-0 border capitalize mb-8">
-                <li className="py-[6px] px-4 leading-6 bg-[#B52B1D] text-white">
-                  about
-                </li>
-                <li className="py-[6px] px-4 leading-6 text-[#333333]">
-                  experience
-                </li>
-                <li className="py-[6px] px-4 leading-6 text-[#333333]">
-                  contact
-                </li>
+                {
+                  container.map((items,index)=>{
+                    return <li className={`py-[6px] px-4 leading-6  hover:cursor-pointer transition-all duration-200 ease-in hover:bg-[#B52B1D] hover:text-white ${option == index?"bg-[#B52B1D] text-white":"bg-transparent text-[#333333]"}`} onClick={()=>{selectTab(items.opt)}} key={index}>
+                      {items.opt}
+                    </li>
+                  })
+                }
               </ul>
 
               <div className="mb-[18px]">
                 <h2 className="font-bebus font-bold text-[62px] leading-[62px] uppercase text-[#181818]">
-                  Exceptional culinary experience and delicious food
+                  {container[option].heading}
                 </h2>
               </div>
 
               <div className="mb-8">
                 <p className=" font-robot font-normal text-base leading-[26px] text-[#333333]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Ornare non sed est cursus. Vel hac convallis ipsum, facilisi
-                  odio pellentesque bibendum viverra tempus. Lorem ipsum dolor
-                  sit amet consectetur adipiscing elit do eiusmod tempor
-                  incididunt ut labore et dolore magna minim veniam nostrud
-                  exercitation.
+                  {
+                    container[option].message
+                  }
                 </p>
               </div>
 
