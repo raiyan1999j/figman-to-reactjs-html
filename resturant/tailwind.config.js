@@ -17,7 +17,8 @@ export default {
         "bannerBg":"url(./public/bannerBg.png)",
         "bannerHeader":"linear-gradient(#BD1F1700,#BD1F17B2)",
         "progressBar":"radial-gradient(closest-side, white 90%,transparent 80% 100%), conic-gradient(#FEBF00 80%,#F1F1F1 0)",
-        "bookFormImg":"url(./public/bookFormImg.jpeg)"
+        "bookFormImg":"url(./public/bookFormImg.jpeg)",
+        "footerBg":"linear-gradient(#000000CC,#000000CC), url(./public/footerBg.jpeg)"
       },
       listStyleType:{
         square:"square"
